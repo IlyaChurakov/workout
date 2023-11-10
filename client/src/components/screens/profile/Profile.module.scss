@@ -1,21 +1,25 @@
 @import 'src/assets/styles/variables';
 
 .before_after {
-	display: flex;
+	display: grid;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 	@media (max-width: $mobile) {
 		width: 90%;
 		margin: 0 auto;
 	}
 	> div {
 		width: 50%;
+		justify-self: center;
 		@media (max-width: $mobile) {
 			width: 48%;
 		}
 	}
 	img {
 		border-radius: 10px;
+		height: 100%;
 	}
 	.heading {
 		margin-bottom: 0.5rem;
