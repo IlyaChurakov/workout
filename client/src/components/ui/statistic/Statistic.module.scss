@@ -1,0 +1,29 @@
+@import 'src/assets/styles/variables';
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+.statistic {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	&__column {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		align-items: center;
+		justify-content: center;
+		&_title {
+			color: $grey;
+			text-align: center;
+		}
+		&_value {
+			color: $white;
+			text-align: center;
+		}
+	}
+}

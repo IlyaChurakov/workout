@@ -1,0 +1,45 @@
+@import 'src/assets/styles/variables';
+
+.images {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.7rem;
+	margin-bottom: 2rem;
+
+	> img {
+		margin: 0 0.5rem;
+		cursor: pointer;
+		border-bottom: 2px solid transparent;
+		padding-bottom: 0.5rem;
+		transition: border-bottom 0.4s ease;
+		opacity: 0.4;
+
+		&.active {
+			opacity: 0.6;
+			border-color: $accent;
+		}
+	}
+}
+
+.wrapperButtons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	> div {
+		width: 48%;
+		> button {
+			width: 100%;
+		}
+		&:last-child > button {
+			background-color: #949494;
+			opacity: 0.8;
+			transition: opacity 0.15s ease;
+			&:hover {
+				background-color: #898989;
+				opacity: 1;
+			}
+		}
+	}
+}
